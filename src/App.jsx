@@ -66,17 +66,22 @@ function App() {
           <h2 className="text-4xl font-heading font-semibold mb-8 text-charcoal">About Me</h2>
           <div className="border-l-4 border-terracotta pl-8">
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I'm a developer with a love for creating elegant solutions to complex problems.
-              With expertise in modern web technologies, I specialize in building responsive, user-friendly
-              applications that deliver exceptional experiences.
+              I'm a problem-solver who happens to use code and technology to get things done.
             </p>
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              My journey in software development has equipped me with a diverse skill set, ranging from
-              front-end frameworks like React to back-end technologies and cloud infrastructure.
+              I spent 15 years teaching myself to build things - starting with web development, moving through various stacks and frameworks, and most recently diving into iOS development and AI integration. I'm currently an M365 administrator, which mostly means I spend my days translating between what technology can do and what people actually need it to do.
+            </p>
+            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
+              I don't have a CS degree and I won't claim to be the most technical person in the room. What I do have is a knack for making complex things understandable, fitting into teams of non-technical folks, and figuring out how to build something that actually works rather than something that just looks impressive on paper.
+            </p>
+            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
+              Lately I've been fascinated by AI - not in a hype-cycle way, but in a "how do we actually make this useful in day-to-day work" way. I'm also tinkering with iOS apps that solve real problems (like my alcohol tracking app that integrates with HealthKit), running a home lab on Proxmox, and generally staying curious about what's possible.
+            </p>
+            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
+              Outside of work, you'll find me on a golf course (working on lowering my handicap), at the gym (recent fitness convert), or trying out new craft beer and cooking projects with family and friends.
             </p>
             <p className="text-lg font-body text-charcoal leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source
-              projects, or sharing knowledge with the developer community.
+              If you're looking for someone who can bridge the gap between technical and human, let's talk.
             </p>
           </div>
         </div>
