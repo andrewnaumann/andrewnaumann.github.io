@@ -126,7 +126,7 @@ function App() {
                 </div>
                 <div>
                   <p className="text-sm font-heading font-medium text-medium-gray mb-1">LinkedIn</p>
-                  <a href="https://linkedin.com/in/andrewnaumann" className="font-body text-slate hover:text-sage transition-colors duration-300" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/andrew-naumann" className="font-body text-slate hover:text-sage transition-colors duration-300" target="_blank" rel="noopener noreferrer">
                     linkedin.com/in/andrewnaumann
                   </a>
                 </div>
