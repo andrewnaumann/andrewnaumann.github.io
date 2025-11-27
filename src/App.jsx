@@ -97,17 +97,23 @@ function App() {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h2>
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-gray-700">
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate developer with a love for creating elegant solutions to complex problems.
-              With expertise in modern web technologies, I specialize in building responsive, user-friendly
-              applications that deliver exceptional user experiences.
+              I've been teaching myself to build things with code for about 15 years now - web development,
+              various stacks, and more recently iOS apps and AI tooling. My day job is M365 administration,
+              which is mostly translating between "what the technology does" and "what people actually need."
             </p>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              My journey in software development has equipped me with a diverse skill set, ranging from
-              front-end frameworks like React to back-end technologies and cloud infrastructure.
+              No CS degree here. I'm not going to be the most technically impressive person in any given room,
+              but I'm pretty good at making complicated stuff make sense, working with non-technical teams,
+              and shipping things that actually work instead of things that just sound good.
+            </p>
+            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+              I've been genuinely interested in AI lately - less the hype, more the "okay but how do we
+              actually use this at work" side of it. I built an alcohol tracking app that syncs with HealthKit,
+              I run a home lab on Proxmox, and I'm always poking at something new.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source
-              projects, or sharing knowledge with the developer community.
+              When I'm not at a keyboard: golf (always trying to get better), gym, craft beer, cooking,
+              and hanging out with friends.
             </p>
           </div>
         </div>
