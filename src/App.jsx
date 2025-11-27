@@ -66,22 +66,16 @@ function App() {
           <h2 className="text-4xl font-heading font-semibold mb-8 text-charcoal">About Me</h2>
           <div className="border-l-4 border-terracotta pl-8">
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I'm a problem-solver who happens to use code and technology to get things done.
+              I've been teaching myself to build things with code for about 15 years now - web development, various stacks, and more recently iOS apps and AI tooling. My day job is M365 administration, which is mostly translating between "what the technology does" and "what people actually need."
             </p>
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I spent 15 years teaching myself to build things - starting with web development, moving through various stacks and frameworks, and most recently diving into iOS development and AI integration. I'm currently an M365 administrator, which mostly means I spend my days translating between what technology can do and what people actually need it to do.
+              No CS degree here. I'm not going to be the most technically impressive person in any given room, but I'm pretty good at making complicated stuff make sense, working with non-technical teams, and shipping things that actually work instead of things that just sound good.
             </p>
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I don't have a CS degree and I won't claim to be the most technical person in the room. What I do have is a knack for making complex things understandable, fitting into teams of non-technical folks, and figuring out how to build something that actually works rather than something that just looks impressive on paper.
-            </p>
-            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              Lately I've been fascinated by AI - not in a hype-cycle way, but in a "how do we actually make this useful in day-to-day work" way. I'm also tinkering with iOS apps that solve real problems (like my alcohol tracking app that integrates with HealthKit), running a home lab on Proxmox, and generally staying curious about what's possible.
-            </p>
-            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              Outside of work, you'll find me on a golf course (working on lowering my handicap), at the gym (recent fitness convert), or trying out new craft beer and cooking projects with family and friends.
+              I've been genuinely interested in AI lately - less the hype, more the "okay but how do we actually use this at work" side of it. I built an alcohol tracking app that syncs with HealthKit, I run a home lab on Proxmox, and I'm always poking at something new.
             </p>
             <p className="text-lg font-body text-charcoal leading-relaxed">
-              If you're looking for someone who can bridge the gap between technical and human, let's talk.
+              When I'm not at a keyboard: golf (always trying to get better), gym, craft beer, cooking, and hanging out with friends.
             </p>
           </div>
         </div>
