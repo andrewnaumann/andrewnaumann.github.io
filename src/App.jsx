@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 
   return (
@@ -25,8 +26,44 @@ function App() {
                 </a>
               ))}
             </div>
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden p-2 text-charcoal"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
+        {/* Mobile menu overlay */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-warm-gray bg-cream/95 backdrop-blur-sm">
+            <div className="px-8 py-4 flex flex-col gap-4">
+              {['Home', 'About', 'Contact'].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="font-heading font-medium text-charcoal hover:text-sage transition-colors duration-300 py-2"
+                  onClick={() => {
+                    setActiveSection(item.toLowerCase())
+                    setMobileMenuOpen(false)
+                  }}
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -36,11 +73,8 @@ function App() {
             <h1 className="text-5xl md:text-6xl font-heading font-semibold mb-6 text-charcoal leading-tight">
               Andrew Naumann
             </h1>
-            <p className="text-2xl md:text-3xl font-body text-sage mb-8 leading-relaxed">
+            <p className="text-2xl md:text-3xl font-body text-charcoal mb-8 leading-relaxed">
             Problem Solver | M365 Admin | Builder of Things
-            </p>
-            <p className="text-lg font-body text-medium-gray mb-12 leading-relaxed">
-            Making technology work for people, not the other way around
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -66,16 +100,12 @@ function App() {
           <h2 className="text-4xl font-heading font-semibold mb-8 text-charcoal">About Me</h2>
           <div className="border-l-4 border-terracotta pl-8">
             <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I've been teaching myself to build things with code for about 15 years now - web development, various stacks, and more recently iOS apps and AI tooling. My day job is M365 administration, which is mostly translating between "what the technology does" and "what people actually need."
-            </p>
-            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              No CS degree here. I'm not going to be the most technically impressive person in any given room, but I'm pretty good at making complicated stuff make sense, working with non-technical teams, and shipping things that actually work instead of things that just sound good.
-            </p>
-            <p className="text-lg font-body text-charcoal mb-6 leading-relaxed">
-              I've been genuinely interested in AI lately - less the hype, more the "okay but how do we actually use this at work" side of it. I built an alcohol tracking app that syncs with HealthKit, I run a home lab on Proxmox, and I'm always poking at something new.
+              I've been teaching myself to build things with code for about 15 years now 
+              - web development, various stacks, and more recently iOS apps and AI tooling. My day job is 
+              M365 administration.
             </p>
             <p className="text-lg font-body text-charcoal leading-relaxed">
-              When I'm not at a keyboard: golf (always trying to get better), gym, craft beer, cooking, and hanging out with friends.
+              When I'm not at a keyboard: golf, gym, cooking, and hanging out with friends.
             </p>
           </div>
         </div>
